@@ -13,4 +13,11 @@ class ExamplePagesController < ApplicationController
     p message
     render json: {fortune: message}
   end
+
+  def future
+    path1 = "new career opportunity"
+    path2 = "new romantic interest"
+    futurepaths = [path1, path2]
+    render json: {message: futurepaths}
+  end
 end
